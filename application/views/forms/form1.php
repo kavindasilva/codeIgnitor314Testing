@@ -7,7 +7,11 @@
 <?php echo validation_errors(); ?>
 
 <?php //echo form_open('index.php/cnt3'); //when config.php: $config['index_page'] = ""; ?>
-<?php echo form_open('cnt3'); ?>
+<?php //echo form_open('cnt3'); ?>
+<?php 
+	$formAttr=array("onSubmit"=>"x" , "name"=>"form1");
+	echo form_open('cnt3', $formAttr); 
+?>
 
 <h5>Username</h5>
 <input type="text" name="username" value="" size="50" />
